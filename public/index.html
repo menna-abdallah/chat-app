@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat App</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login-form">
+    <input type="text" id="username" placeholder="Enter your username">
+    <button id="loginBtn">Login</button>
+  </div>
+
+  <div id="page-content" style="display: none;">
+    <div class = "colum">
+        <div id="chat-content">
+        </div>
+        <div class="row">
+            <input type="text" id="messageContent" placeholder="Type your message...">
+            <button id="sendBtn">Send</button>
+        </div>
+    </div>
+  </div>
+  <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <script defer src="script.js"></script>
+</body>
+</html>
